@@ -1,8 +1,9 @@
 # Robot Framework reCAPTCHA Handler
 **Automatización de pruebas web con Robot Framework manejando escenarios de reCAPTCHA**
+<img width="1536" height="1024" alt="ChatGPT Image 7 nov 2025, 03_28_25 p m" src="https://github.com/user-attachments/assets/0edd82ef-1ff5-419f-846b-a9d2154a1bea" />
 
 ## 📋 Descripción
-Este repositorio contiene un script de automatización de pruebas desarrollado en Robot Framework que demuestra cómo manejar inteligentemente los escenarios mediante **Condicionales** y **Keywords**, en escenarios dónde Google activa su sistema de protección **Handler - ReCAPTCHA** durante procesos de automatización.
+Este repositorio contiene un script de automatización de pruebas desarrollado en Robot Framework que demuestra cómo manejar inteligentemente los escenarios con **Condicionales** y **Keywords**, en escenarios dónde Google activa su sistema de protección **Handler - ReCAPTCHA** durante procesos de automatización.
 
 ## 🚀 Características
 - **Detección automática** de páginas de verificación de reCAPTCHA
