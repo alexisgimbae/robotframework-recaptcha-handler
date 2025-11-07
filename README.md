@@ -1,6 +1,6 @@
 # Robot Framework reCAPTCHA Handler
 **Automatización de pruebas web con Robot Framework manejando escenarios de reCAPTCHA**
-<img width="1536" height="1024" alt="ChatGPT Image 7 nov 2025, 03_28_25 p m" src="https://github.com/user-attachments/assets/0edd82ef-1ff5-419f-846b-a9d2154a1bea" />
+<img width="1200" height="675" alt="ChatGPT Image 7 nov 2025, 03_28_25 p m" src="https://github.com/user-attachments/assets/0edd82ef-1ff5-419f-846b-a9d2154a1bea" />
 
 ## 📋 Descripción
 Este repositorio contiene un script de automatización de pruebas desarrollado en Robot Framework que demuestra cómo manejar inteligentemente los escenarios con **Condicionales** y **Keywords**, en escenarios dónde Google activa su sistema de protección **Handler - ReCAPTCHA** durante procesos de automatización.
@@ -25,31 +25,34 @@ Este repositorio contiene un script de automatización de pruebas desarrollado e
 - Finalización elegante de la prueba
 
 ## 🏗️ Estructura del Código
+```robot
 *** Test Cases ***
 Search Google and Navigate
-# Flujo principal con manejo condicional
-Run Keyword If ${isRecaptcha} Check Recaptcha ELSE Go To Destination Page
+    # Flujo principal con manejo condicional
+    Run Keyword If    ${isRecaptcha}    Check Recaptcha    ELSE    Go To Destination Page
 
 *** Keywords ***
 Check Recaptcha
-# Maneja el escenario cuando aparece reCAPTCHA
+    # Maneja el escenario cuando aparece reCAPTCHA
 
 Go To Destination Page
-# Ejecuta el flujo normal de navegación
+    # Ejecuta el flujo normal de navegación
 
-## 📁 Archivos
-- `automation.robot` - Script principal de automatización
-- `README.md` - Documentación del proyecto
+🛠️ Tecnologías
 
-## 🛠️ Tecnologías
-- **Robot Framework** - Framework de automatización
-- **SeleniumLibrary** - Biblioteca para automatización web
-- **Python** - Lenguaje de programación base
-- **Git** - Control de versiones
+    Robot Framework - Framework de automatización
 
-### Programas y Librerías Necesarios
+    SeleniumLibrary - Biblioteca para automatización web
+
+    Python - Lenguaje de programación base
+
+    Git - Control de versiones
+
+⚙️ Prerrequisitos de Instalación
+Programas y Librerías Necesarios
 # 1. Instalar Python y pip
 # Descargar desde: https://python.org
+
 # 2. Instalar todas las dependencias con pip
 pip install robotframework
 pip install robotframework-seleniumlibrary
@@ -69,9 +72,10 @@ python --version
 pip --version
 robot --version
 
-## Ejecutar las pruebas
+🏃‍♂️ Ejecución de Pruebas
 # Navegar al directorio del proyecto y ejecutar en la terminal o cmd:
 robot VerifyGoogleHandlerRecaptcha.robot
+
 # Ejecutar con tags específicos
 robot -i TC_001 automation.robot
 
@@ -86,18 +90,34 @@ Después de la ejecución, se generan automáticamente:
 
     screenshot-{index}.png - 🖼️ Capturas de evidencia visual
 
-- ## 📸 Evidencias
+📸 Evidencias
 El script captura screenshots automáticamente en ambos escenarios:
-- `screenshot-{index}.png` - Para flujo normal
-- `screenshot-{index}.png` - Para escenarios de reCAPTCHA
 
-## 💡 Casos de Uso
+    screenshot-{index}.png - Para flujo normal
+
+    screenshot-{index}.png - Para escenarios de reCAPTCHA
+
+📁 Archivos
+
+    automation.robot - Script principal de automatización
+
+    README.md - Documentación del proyecto
+
+💡 Casos de Uso
+
 Sugeridos para tipo de pruebas:
-- Integración con motores de búsqueda
-- Manejo de sistemas anti-bots en automatizaciones
-- Aprendizaje de flujos condicionales en Robot Framework
 
-## 📄 Licencia
+    Integración con motores de búsqueda
+
+    Manejo de sistemas anti-bots en automatizaciones
+
+    Aprendizaje de flujos condicionales en Robot Framework
+
+📄 Licencia
+
 MIT License
 
 Copyright (c) 2024 Alexis Giménez.
+
+
+
