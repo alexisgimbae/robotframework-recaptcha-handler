@@ -47,6 +47,45 @@ Go To Destination Page
 - **Python** - Lenguaje de programación base
 - **Git** - Control de versiones
 
+### Programas y Librerías Necesarios
+# 1. Instalar Python y pip
+# Descargar desde: https://python.org
+# 2. Instalar todas las dependencias con pip
+pip install robotframework
+pip install robotframework-seleniumlibrary
+pip install selenium
+pip install webdriver-manager
+
+# 3. Navegador Firefox
+# Descargar desde: https://mozilla.org/firefox
+
+# 4. GeckoDriver para Firefox (Opciones):
+# Opción A: Usar webdriver-manager (recomendado - se instala automáticamente)
+# Opción B: Descargar manualmente desde: https://github.com/mozilla/geckodriver/releases
+#           y agregar el ejecutable al PATH del sistema
+
+# 5. Verificar instalaciones
+python --version
+pip --version
+robot --version
+
+## Ejecutar las pruebas
+# Navegar al directorio del proyecto y ejecutar en la terminal o cmd:
+robot VerifyGoogleHandlerRecaptcha.robot
+# Ejecutar con tags específicos
+robot -i TC_001 automation.robot
+
+📊 Reportes Generados
+Después de la ejecución, se generan automáticamente:
+
+    report.html - 📊 Reporte ejecutivo con resultados
+
+    log.html - 📝 Log detallado paso a paso
+
+    output.xml - 🔧 Datos estructurados para integraciones
+
+    screenshot-{index}.png - 🖼️ Capturas de evidencia visual
+
 - ## 📸 Evidencias
 El script captura screenshots automáticamente en ambos escenarios:
 - `screenshot-{index}.png` - Para flujo normal
